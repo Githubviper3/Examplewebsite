@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
+
 }
 
 .MainCard {
@@ -12,7 +12,7 @@ body {
     padding: 2em;
     background-color: #fdfdff;
     border-radius: 0.5em;
-    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.5);
+    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -41,10 +41,77 @@ body {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
 
-#SearchBar{
+#SearchBar {
     width: 50%;
     height: 1.1em;
     border-radius: 4px;
+}
+
+.switch {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+
+
+
+input:checked+.slider {
+    background-color: gray;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px gray;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color:#404040;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
