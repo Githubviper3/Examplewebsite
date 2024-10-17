@@ -10,3 +10,8 @@ function RandomLinkOpener(){
     window.open(site,"_blank")
 };
 
+// function myFunction() {
+//     // Get the checkbox
+//     var checkBox = document.getElementById("myCheck");
+//     checkBox.checked condition link it to code
+//   }
