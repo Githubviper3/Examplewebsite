@@ -50,9 +50,6 @@ body {
 }
 
 .switch {
-    position: absolute;
-    top: 2%;
-    right: 3%;
     display: inline-block;
     width: 60px;
     height: 34px;
@@ -113,15 +110,9 @@ input:checked+.slider:before {
 }
 
 #Dark_Mode{
-    position: absolute;
-    top: 2.9%;
-    right: 1%;
 }
 
 #Light_Mode{
-    position: absolute;
-    top: 3%;
-    right: 8%;
 }
 
 .slider.round:before {
